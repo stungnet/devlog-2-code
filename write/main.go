@@ -29,4 +29,6 @@ func main(){
 	// Convert the input to byes to write it to the file.
 	data := []byte(contents)
 	os.WriteFile(filename, data, 0664)
+
+	os.WriteFile(name string, data []byte, perm os.FileMode)
 }
